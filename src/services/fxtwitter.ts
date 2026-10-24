@@ -51,7 +51,7 @@ export async function fetchTweet(id: string): Promise<FxTweet> {
         timeout: 10_000,
         retry: 1,
         throwHttpErrors: false,
-        headers: { "User-Agent": "twitter-quote-bot" },
+        headers: { "User-Agent": "discord-twitter-quote-bot" },
       })
       .json<FxResponse>();
   } catch (error) {
